@@ -1,0 +1,33 @@
+.background {
+    background-color: lightgray;
+    width: 400px;
+    height: 600px;
+}
+.result {
+    background-color: lightcoral;
+    width: 393px;
+    height: 10%;
+}
+.cell {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 90%;
+}
+.number, .option {
+    padding: 5px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(82, 77, 77);
+    border: solid;
+    cursor: pointer;
+}
+.number:hover, .option:hover{
+    background-color: rgb(150, 150, 150);
+}
+
+.number.zero {
+    grid-column: span 2;
+}
